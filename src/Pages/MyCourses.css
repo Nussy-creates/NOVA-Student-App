@@ -1,0 +1,135 @@
+.courses-page {
+  padding: 2% 40px;
+}
+.courses-page h1 {
+  background: linear-gradient(to right, #0f9b0f, #000000);
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+  padding-bottom: 5px;
+}
+.courses-page .page {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 17px;
+  padding-bottom: 20px;
+}
+.course-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+}
+.course-card {
+  background-image: linear-gradient(to bottom right, #bbf7d0, #dbeafe, #93c5fd);
+  color: linear-gradient(to right, #0f9b0f, #000000);
+  font-size: 20px;
+  width: 350px;
+  height: 200px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-size: contain;
+  padding: 10px;
+}
+.course-card h2 {
+  background: linear-gradient(to right, #0f9b0f, #000000);
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  padding-bottom: 5px;
+}
+.course-card p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.course-card button {
+  color: white;
+  background: linear-gradient(to right, #0f9b0f, #000000);
+  padding: 10px 15px;
+  font-size: 15px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+/* =========================
+   COURSES PAGE
+   PHONE RESPONSIVE DESIGN
+   ========================= */
+
+@media (max-width: 430px) {
+  .courses-page {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 20px 5%;
+    overflow-x: hidden;
+  }
+
+  .courses-page h1 {
+    font-size: 28px;
+    padding-bottom: 5px;
+  }
+
+  .courses-page .page {
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+
+  /* =========================
+     COURSE GRID
+     ========================= */
+
+  .course-grid {
+    width: 100%;
+    max-width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  /* =========================
+     COURSE CARD
+     ========================= */
+
+  .course-card {
+    width: 100%;
+    max-width: 100%;
+    min-height: 200px;
+    height: auto;
+
+    box-sizing: border-box;
+    padding: 15px;
+
+    font-size: 16px;
+    border-radius: 10px;
+  }
+
+  .course-card h2 {
+    font-size: 22px;
+    padding-bottom: 5px;
+  }
+
+  .course-card p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  /* =========================
+     COURSE BUTTON
+     ========================= */
+
+  .course-card button {
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 8px;
+    margin-top: 5px;
+  }
+}
