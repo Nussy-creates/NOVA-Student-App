@@ -12,7 +12,7 @@ const Home = () => {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:5000/")
+    fetch("https://nova-ai-backend.onrender.com/ask")
       .then((res) => res.text())
       .then((data) => {
         setMessage(data);

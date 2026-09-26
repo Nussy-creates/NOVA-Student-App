@@ -23,7 +23,7 @@ const AITutor = () => {
 
     try {
       console.log("Sending message to backend:", userMessage);
-      const response = await fetch("http://localhost:5000/ask", {
+      const response = await fetch("https://nova-ai-backend.onrender.com/ask", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
